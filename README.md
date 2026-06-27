@@ -19,6 +19,7 @@ sid = "your-connect.sid-value"
 ```
 
 `sid` はブラウザの <F12>DevTools → Application → Cookies → `scrapbox.io` の `connect.sid` の値です。
+
 パブリックプロジェクトのみで `scrb` を使用する場合は不要です。
 
 ## Commands
@@ -54,9 +55,10 @@ scrb raw <YOUR_PROJECT_NAME> <PAGE_TITLE> > pagetitle.txt
 
 ## Cache
 
-取得したページ一覧の情報（`ls` および `md`/`raw` のページ名補完）は `cache/<project>/titles.json` にキャッシュされます。
-更新は呼び出す際に1日おきで行われます。
-（キャッシュの手動更新は未実装）
+取得したページ一覧の情報（`ls` および `md`/`raw` のページ名補完に使用）は
+`cache/<project>/titles.json` にキャッシュされます。
+
+更新は呼び出す際に1日おきで行われます。（キャッシュの手動更新は未実装）
 
 ## 注意事項
 
